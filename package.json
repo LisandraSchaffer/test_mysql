@@ -1,0 +1,19 @@
+{
+  "name": "clinica",
+  "version": "0.0.1",
+  "description": "proyecto Node.js para manejar datos de una clínica, que nos enseñó el profe mas capo de todos ;)",
+  "main": "db.js",
+  "scripts": {
+    "test": "ENTER"
+  },
+  "keywords": [
+    "mysql",
+    "node",
+    "clinica"
+  ],
+  "author": "Schaffer Lisandra",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.14.1"
+  }
+}
