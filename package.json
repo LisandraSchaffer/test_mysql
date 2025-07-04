@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "clinica",
   "version": "0.0.1",
   "description": "proyecto Node.js para manejar datos de una clínica, que nos enseñó el profe mas capo de todos ;)",

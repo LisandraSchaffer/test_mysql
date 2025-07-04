@@ -54,3 +54,39 @@ function getMedicosPaciente(nro_historial_clinico) {
     }
   });
 }
+
+//funciones para calculadora
+import info, { sumar, restar, multiplicar, dividir } from './calculadora.js';
+
+function calcular(operacion, a, b) {
+  let resultado;
+
+  switch (operacion) {
+    case "sumar":
+      resultado = sumar(a, b);
+      break;
+    case "restar":
+      resultado = restar(a, b);
+      break;
+    case "multiplicar":
+      resultado = multiplicar(a, b);
+      break;
+    case "dividir":
+      resultado = dividir(a, b);
+      break;
+    default:
+      resultado = "Operación no válida. Use: sumar, restar, multiplicar o dividir.";
+  }
+
+  console.log(`Resultado de ${operacion}:`, resultado);
+}
+
+info();
+
+// Pruebas
+calcular("sumar", 10, 5);         // 15
+calcular("restar", 10, 5);        // 5
+calcular("multiplicar", 10, 5);   // 50
+calcular("dividir", 10, 2);       // 5
+calcular("dividir", 10, 0);       // Error
+calcular("sumar", "a", 5);        // Error
